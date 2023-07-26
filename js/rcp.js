@@ -14,9 +14,9 @@ function playGame(playerChoice) {
   if (playerChoice === computerChoice) {
     resultText = "비겼습니다!";
   } else if (
-    (playerChoice === "가위" && computerChoice === "보") ||
-    (playerChoice === "바위" && computerChoice === "가위") ||
-    (playerChoice === "보" && computerChoice === "바위")
+    (playerChoice === "scissors" && computerChoice === "paper") ||
+    (playerChoice === "rock" && computerChoice === "scissors") ||
+    (playerChoice === "paper" && computerChoice === "rock")
   ) {
     resultText = "승리했습니다!";
   } else {
